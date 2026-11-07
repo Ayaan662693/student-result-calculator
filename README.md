@@ -59,7 +59,7 @@ GRADER/
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/<your-username>/student-result-calculator.git
+   git clone https://github.com/Ayaan662693/student-result-calculator.git
    ```
 2. Navigate into the project folder:
    ```bash
