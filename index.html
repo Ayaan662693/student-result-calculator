@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Result & Grade Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Student Result & Grade Calculator</h1>
+
+    <!-- Grading Rules Section -->
+    <div class="rules-box">
+      <h3>Grading Rules:</h3>
+      <ul>
+        <li>90% and above: <strong>Grade A+</strong></li>
+        <li>80% to 89%: <strong>Grade A</strong></li>
+        <li>70% to 79%: <strong>Grade B</strong></li>
+        <li>60% to 69%: <strong>Grade C</strong></li>
+        <li>50% to 59%: <strong>Grade D</strong></li>
+        <li>40% to 49%: <strong>Grade E</strong></li>
+        <li>Below 40%: <strong>Grade F (Fail)</strong></li>
+      </ul>
+      <p><small>* Note: Student must score at least 35 marks in each subject to pass.</small></p>
+    </div>
+
+    <!-- Error Message Box -->
+    <div id="errorMessage" class="error-box"></div>
+
+    <!-- Input Form -->
+    <div class="form-box">
+      <div class="form-group">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" placeholder="Enter student name">
+      </div>
+
+      <div class="form-group">
+        <label for="sub1">Subject 1 Marks:</label>
+        <input type="number" id="sub1" placeholder="Enter marks (0-100)">
+      </div>
+
+      <div class="form-group">
+        <label for="sub2">Subject 2 Marks:</label>
+        <input type="number" id="sub2" placeholder="Enter marks (0-100)">
+      </div>
+
+      <div class="form-group">
+        <label for="sub3">Subject 3 Marks:</label>
+        <input type="number" id="sub3" placeholder="Enter marks (0-100)">
+      </div>
+
+      <div class="form-group">
+        <label for="sub4">Subject 4 Marks:</label>
+        <input type="number" id="sub4" placeholder="Enter marks (0-100)">
+      </div>
+
+      <div class="form-group">
+        <label for="sub5">Subject 5 Marks:</label>
+        <input type="number" id="sub5" placeholder="Enter marks (0-100)">
+      </div>
+
+      <div class="btn-group">
+        <button id="calcBtn" type="button">Calculate Result</button>
+        <button id="resetBtn" type="button">Reset</button>
+      </div>
+    </div>
+
+    <!-- Result Card -->
+    <div id="resultCard" class="result-card">
+      <h2>Student Result</h2>
+      <div class="result-row">
+        <span>Name:</span>
+        <strong id="resName"></strong>
+      </div>
+      <div class="result-row">
+        <span>Total Marks:</span>
+        <strong id="resTotal"></strong>
+      </div>
+      <div class="result-row">
+        <span>Average Marks:</span>
+        <strong id="resAvg"></strong>
+      </div>
+      <div class="result-row">
+        <span>Percentage:</span>
+        <strong id="resPercentage"></strong>
+      </div>
+      <div class="result-row">
+        <span>Grade:</span>
+        <strong id="resGrade"></strong>
+      </div>
+      <div class="result-row">
+        <span>Status:</span>
+        <strong id="resStatus"></strong>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
