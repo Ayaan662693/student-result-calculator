@@ -69,6 +69,6 @@ GRADER/
 
 ---
 
-## Live Demo (Optional)
+## Live Demo
 
-- **Live URL**: *(Add your Vercel / Netlify / GitHub Pages link here once deployed)*
+- **Live URL**: https://ayaan662693.github.io/student-result-calculator/
